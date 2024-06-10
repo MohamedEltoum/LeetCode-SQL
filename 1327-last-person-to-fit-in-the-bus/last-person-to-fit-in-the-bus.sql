@@ -7,8 +7,7 @@ WITH Passengers_Weight_Order AS (
 
 SELECT person_name
 FROM Passengers_Weight_Order
-WHERE weight_Sum <= 1000 
-    AND turn IN 
+WHERE turn IN 
         (
             SELECT MAX(turn) 
             FROM Passengers_Weight_Order 
